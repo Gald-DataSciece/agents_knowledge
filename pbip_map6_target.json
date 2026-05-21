@@ -1,0 +1,2522 @@
+{
+  "model_summary": {
+    "tables": 13,
+    "measures": 25,
+    "relationships": 7,
+    "pages": 0
+  },
+  "model": {
+    "tables": {
+      "Dimensões": {
+        "name": "Dimensões",
+        "isHidden": false,
+        "columns": [
+          {
+            "name": "Dimensões",
+            "dataType": "String",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "Dimensões Campos",
+            "dataType": "String",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "Dimensões Pedido",
+            "dataType": "String",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": "0",
+            "description": null
+          }
+        ],
+        "measures": [],
+        "partitions": [
+          {
+            "name": "Dimensões",
+            "mode": "import",
+            "power_query_summary": {
+              "provider": null,
+              "steps_count": 0,
+              "steps_summary": [],
+              "native_query": {
+                "exists": false
+              },
+              "confidence": "low"
+            }
+          }
+        ],
+        "description": null
+      },
+      "Dim_BRICKS": {
+        "name": "Dim_BRICKS",
+        "isHidden": false,
+        "columns": [
+          {
+            "name": "BRICK_CD",
+            "dataType": "int64",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": "0",
+            "description": null
+          },
+          {
+            "name": "BRICK_DESC",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "CITIES_DESC",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "nome_municipio",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "UF",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "ESTADO",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "BRICK",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "Regiao",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "SET_ID",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "CLUSTER",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "Business_Unit",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "Business_Front",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "Team",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "Op",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "territorio_descricao",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "cenario_ativo",
+            "dataType": "boolean",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": "TRUE\"\";\"\"TRUE\"\";\"\"FALSE",
+            "description": null
+          },
+          {
+            "name": "cenario_nome",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "ciclo_data_ini",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "ciclo_data_fim",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "ciclo_nome",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "SALES_REP",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "funcionario_sf",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "funcionario_status",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "distrito",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "DISTRITAL_MANAGER",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "sf_distrital",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "regional",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "REGIONAL_MANAGER",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "sf_regional",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "email_rep",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "gd_email",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "gr_email",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          }
+        ],
+        "measures": [],
+        "partitions": [
+          {
+            "name": "Dim_BRICKS",
+            "mode": "import",
+            "power_query_summary": {
+              "provider": "databricks",
+              "steps_count": 17,
+              "steps_summary": [
+                "Source",
+                "QueryDBT",
+                "INNER JOIN brazil.silver.galportal_cenario C ON C.cenario_codigo",
+                "INNER JOIN brazil.silver.galportal_ciclo Ci ON Ci.ciclo_codigo",
+                "INNER JOIN brazil.silver.galportal_territorio_funcionario TF ON TF.territorio_codigo"
+              ],
+              "native_query": {
+                "exists": false
+              },
+              "confidence": "partial"
+            }
+          }
+        ],
+        "description": null
+      },
+      "Dim_CAT": {
+        "name": "Dim_CAT",
+        "isHidden": false,
+        "columns": [
+          {
+            "name": "ID_UFCRM_MERCADO",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "UFCRM",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "MERCADO",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "ANO_REF_CAT",
+            "dataType": "int64",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": "0",
+            "description": null
+          },
+          {
+            "name": "TOTAL_PX",
+            "dataType": "double",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "CAT",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          }
+        ],
+        "measures": [],
+        "partitions": [
+          {
+            "name": "Dim_CAT",
+            "mode": "import",
+            "power_query_summary": {
+              "provider": "databricks",
+              "steps_count": 23,
+              "steps_summary": [
+                "Source",
+                "QueryDBT",
+                "WHEN A.CODIGO",
+                "WHEN A.CODIGO",
+                "WHEN A.CODIGO"
+              ],
+              "native_query": {
+                "exists": false
+              },
+              "confidence": "partial"
+            }
+          }
+        ],
+        "description": null
+      },
+      "Dim_FV": {
+        "name": "Dim_FV",
+        "isHidden": false,
+        "columns": [
+          {
+            "name": "SET_ID",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "CLUSTER",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "Business_Unit",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "Business_Front",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "Team",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "Op",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "territorio_descricao",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "cenario_ativo",
+            "dataType": "boolean",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": "TRUE\"\";\"\"TRUE\"\";\"\"FALSE",
+            "description": null
+          },
+          {
+            "name": "cenario_nome",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "ciclo_data_ini",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "ciclo_data_fim",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "ciclo_nome",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "SALES_REP",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "funcionario_sf",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "funcionario_status",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "email_rep",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "distrito",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "DISTRITAL_MANAGER",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "sf_distrital",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "gd_email",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "regional",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "REGIONAL_MANAGER",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "sf_regional",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "gr_email",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          }
+        ],
+        "measures": [],
+        "partitions": [
+          {
+            "name": "Dim_FV",
+            "mode": "import",
+            "power_query_summary": {
+              "provider": "databricks",
+              "steps_count": 17,
+              "steps_summary": [
+                "Source",
+                "QueryDBT",
+                "INNER JOIN brazil.silver.galportal_cenario C ON C.cenario_codigo",
+                "INNER JOIN brazil.silver.galportal_ciclo Ci ON Ci.ciclo_codigo",
+                "INNER JOIN brazil.silver.galportal_territorio_funcionario TF ON TF.territorio_codigo"
+              ],
+              "native_query": {
+                "exists": false
+              },
+              "confidence": "partial"
+            }
+          }
+        ],
+        "description": null
+      },
+      "Dim_Medicos": {
+        "name": "Dim_Medicos",
+        "isHidden": false,
+        "columns": [
+          {
+            "name": "UFCRM",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "UF",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "MUNICIPIO",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "NOME_MEDICO",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "ESP1",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "ESP2",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "CEP",
+            "dataType": "int64",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": "0",
+            "description": null
+          },
+          {
+            "name": "BRICK_CD",
+            "dataType": "int64",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": "0",
+            "description": null
+          },
+          {
+            "name": "BRICK_DESC",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "CITIES_DESC",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "STATE_SHORT_DESC",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "BAIRRO",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "TIPO_ENCONTRO",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "MEDICO",
+            "dataType": "String",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "VISIT_ID",
+            "dataType": "String",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "SET_ID",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          }
+        ],
+        "measures": [],
+        "partitions": [
+          {
+            "name": "Dim_Medicos",
+            "mode": "import",
+            "power_query_summary": {
+              "provider": "databricks",
+              "steps_count": 15,
+              "steps_summary": [
+                "Source",
+                "QueryDBT",
+                "INNER JOIN brazil.silver.galportal_cenario c ON c.cenario_codigo",
+                "INNER JOIN brazil.silver.galportal_ciclo ci ON ci.ciclo_codigo",
+                "INNER JOIN brazil.silver.galportal_territorio_funcionario tf ON tf.territorio_codigo"
+              ],
+              "native_query": {
+                "exists": false
+              },
+              "confidence": "partial"
+            }
+          }
+        ],
+        "description": null
+      },
+      "Dim_Medidas": {
+        "name": "Dim_Medidas",
+        "isHidden": false,
+        "columns": [
+          {
+            "name": "Coluna 1",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          }
+        ],
+        "measures": [
+          {
+            "name": "PX Total",
+            "dax": "SUM(Fato_Target[PX])\n\t\tannotation PBI_FormatHint = {\"isDecimal\":true}",
+            "isHidden": false,
+            "formatString": "#,0",
+            "displayFolder": "Medidas_Base",
+            "description": null,
+            "business_domains": [
+              "efficiency"
+            ]
+          },
+          {
+            "name": "PX Atual",
+            "dax": "VAR PeriodoSelecionado = SELECTEDVALUE(Tabela_Periodos_Unificada[Periodo], \"MAT\")\n\t\t\tRETURN\n\t\t\tCALCULATE(\n\t\t\t    [PX Total],\n\t\t\t    FILTER(\n\t\t\t        ALL(Dim_PER), // O ALL limpa os filtros antigos da tabela de tempo\n\t\t\t        SWITCH(\n\t\t\t            PeriodoSelecionado,\n\t\t\t            \"MTH\", Dim_PER[MTH_NM] = \"MÊS001\",\n\t\t\t            \"ANO\", Dim_PER[YEAR_NM] = \"Y001\",\n\t\t\t            \"MQT\", Dim_PER[MQT_NM] = \"MQT001\",\n\t\t\t            \"TRIM\", Dim_PER[TRI_NM] = \"TRI001\",\n\t\t\t            \"MAT\", Dim_PER[MAT_NM] = \"MAT001\",\n\t\t\t            \"YTD\", Dim_PER[YTD_NM] = \"YTD001\",\n\t\t\t            FALSE()\n\t\t\t        )\n\t\t\t    )\n\t\t\t)\n\t\tannotation PBI_FormatHint = {\"isDecimal\":true}",
+            "isHidden": false,
+            "formatString": "#,0",
+            "displayFolder": "Medidas_Base",
+            "description": null,
+            "business_domains": []
+          },
+          {
+            "name": "PX Anterior",
+            "dax": "VAR PeriodoSelecionado = SELECTEDVALUE(Tabela_Periodos_Unificada[Periodo], \"MTH\")\n\t\t\tRETURN\n\t\t\tCALCULATE(\n\t\t\t    [PX Total],\n\t\t\t    FILTER(\n\t\t\t        ALL(Dim_Per), \n\t\t\t        SWITCH(\n\t\t\t            PeriodoSelecionado,\n\t\t\t            \"MTH\", Dim_Per[MTH_NM] = \"MÊS002\",\n\t\t\t            \"ANO\", Dim_Per[YEAR_NM] = \"Y002\",\n\t\t\t            \"MQT\", Dim_Per[MQT_NM] = \"MQT002\",\n\t\t\t            \"TRIM\", Dim_Per[TRI_NM] = \"TRI002\",\n\t\t\t            \"MAT\", Dim_Per[MAT_NM] = \"MAT002\",\n\t\t\t            \"YTD\", Dim_Per[YTD_NM] = \"YTD002\",\n\t\t\t            FALSE()\n\t\t\t        )\n\t\t\t    )\n\t\t\t)\n\t\t\t \n\t\tannotation PBI_FormatHint = {\"isGeneralNumber\":true}",
+            "isHidden": false,
+            "formatString": null,
+            "displayFolder": "Medidas_Base",
+            "description": null,
+            "business_domains": [
+              "growth"
+            ]
+          },
+          {
+            "name": "PX YoY",
+            "dax": "VAR PeriodoSelecionado = SELECTEDVALUE(Tabela_Periodos_Unificada[Periodo], \"MTH\")\n\t\t\tRETURN\n\t\t\tCALCULATE(\n\t\t\t    [PX Total],\n\t\t\t    FILTER(\n\t\t\t        ALL(Dim_Per), \n\t\t\t        SWITCH(\n\t\t\t            PeriodoSelecionado,\n\t\t\t            \"MTH\", Dim_Per[MTH_NM] = \"MÊS013\",\n\t\t\t            \"ANO\", Dim_Per[YEAR_NM] = \"Y002\",\n\t\t\t            \"MQT\", Dim_Per[MQT_NM] = \"MQT005\",\n\t\t\t            \"TRIM\", Dim_Per[TRI_NM] = \"TRI005\",\n\t\t\t            \"MAT\", Dim_Per[MAT_NM] = \"MAT002\",\n\t\t\t            \"YTD\", Dim_Per[YTD_NM] = \"YTD002\",\n\t\t\t            FALSE()\n\t\t\t        )\n\t\t\t    )\n\t\t\t)\n\t\t\t \n\t\tannotation PBI_FormatHint = {\"isGeneralNumber\":true}",
+            "isHidden": false,
+            "formatString": null,
+            "displayFolder": "Medidas_Base",
+            "description": null,
+            "business_domains": [
+              "growth"
+            ]
+          },
+          {
+            "name": "PX Comparativo",
+            "dax": "VAR _Selecao = SELECTEDVALUE(SeletorComparacao[ID_Comparacao], 1)\n\t\t\tRETURN\n\t\t\tSWITCH(\n\t\t\t    _Selecao,\n\t\t\t    1, [PX Anterior],\n\t\t\t    2, [PX YoY],\n\t\t\t    BLANK()\n\t\t\t)\n\t\tannotation PBI_FormatHint = {\"isDecimal\":true}",
+            "isHidden": false,
+            "formatString": "#,0",
+            "displayFolder": "Medidas_Base",
+            "description": null,
+            "business_domains": [
+              "growth"
+            ]
+          },
+          {
+            "name": "PX Crescimento %",
+            "dax": "VAR _Atual = [PX Atual]\n\t\t\tVAR _Comparativo = [PX Comparativo]\n\t\t\tRETURN\n\t\t\t    IF(\n\t\t\t        ISBLANK(_Atual) && ISBLANK(_Comparativo),\n\t\t\t        BLANK(),\n\t\t\t        DIVIDE(\n\t\t\t            _Atual - _Comparativo,\n\t\t\t            _Comparativo,\n\t\t\t            BLANK()\n\t\t\t        )\n\t\t\t    )",
+            "isHidden": false,
+            "formatString": "0.0%;-0.0%;0.0%",
+            "displayFolder": null,
+            "description": null,
+            "business_domains": [
+              "growth"
+            ]
+          },
+          {
+            "name": "MS Atual",
+            "dax": "VAR _Demanda_Atual = [PX Atual]\n\t\t\tVAR _DemandaMKT_Atual = \n\t\t\t    CALCULATE(\n\t\t\t        [PX Atual],\n\t\t\t        REMOVEFILTERS(\n\t\t\t            Fato_Target[MARCA],\n\t\t\t            Fato_Target[LABORATORIO],\n\t\t\t            Fato_Target[LAB_ABV],\n\t\t\t            Fato_Target[APRESENTACAO],\n\t\t\t            Fato_Target[FORMA_FARMA],\n\t\t\t            Fato_Target[CONCENTRACAO]\n\t\t\t        ), \n\t\t\t        KEEPFILTERS(VALUES(Fato_Target[MERCADO]))\n\t\t\t    )\n\t\t\tRETURN\n\t\t\t    DIVIDE(_Demanda_Atual, _DemandaMKT_Atual, 0)",
+            "isHidden": false,
+            "formatString": "0.0%;-0.0%;0.0%",
+            "displayFolder": null,
+            "description": null,
+            "business_domains": [
+              "efficiency",
+              "volume"
+            ]
+          },
+          {
+            "name": "MS Comparativo",
+            "dax": "VAR _Demanda_Comparativa = [PX Comparativo]\n\t\t\tVAR _DemandaMKT_Comparativa = \n\t\t\t    CALCULATE(\n\t\t\t        [PX Comparativo],\n\t\t\t        REMOVEFILTERS(\n\t\t\t            Fato_Target[MARCA],\n\t\t\t            Fato_Target[LABORATORIO],\n\t\t\t            Fato_Target[LAB_ABV],\n\t\t\t            Fato_Target[APRESENTACAO],\n\t\t\t            Fato_Target[FORMA_FARMA],\n\t\t\t            Fato_Target[CONCENTRACAO]\n\t\t\t        ), \n\t\t\t        KEEPFILTERS(VALUES(Fato_Target[MERCADO]))\n\t\t\t    )\n\t\t\tRETURN\n\t\t\t    DIVIDE(_Demanda_Comparativa, _DemandaMKT_Comparativa, 0)\n\t\t\t \n\t\tannotation PBI_FormatHint = {\"isGeneralNumber\":true}",
+            "isHidden": false,
+            "formatString": null,
+            "displayFolder": null,
+            "description": null,
+            "business_domains": [
+              "efficiency",
+              "growth",
+              "volume"
+            ]
+          },
+          {
+            "name": "GLD Share",
+            "dax": "VAR _DemandaGLD = \n\t\t\t    CALCULATE(\n\t\t\t        [PX Total], \n\t\t\t        Fato_Target[LABORATORIO] = \"GALDERMA\"\n\t\t\t    )\n\t\t\tVAR _DemandaMKT = \n\t\t\t    CALCULATE(\n\t\t\t        [PX Total],\n\t\t\t        REMOVEFILTERS(\n\t\t\t            Fato_Target[MARCA],\n\t\t\t            Fato_Target[LABORATORIO],\n\t\t\t            Fato_Target[LAB_ABV],\n\t\t\t            Fato_Target[APRESENTACAO],\n\t\t\t            Fato_Target[FORMA_FARMA],\n\t\t\t            Fato_Target[CONCENTRACAO]\n\t\t\t        ), \n\t\t\t        KEEPFILTERS(VALUES(Fato_Target[MERCADO]))\n\t\t\t    )\n\t\t\tRETURN\n\t\t\t    DIVIDE(_DemandaGLD, _DemandaMKT, 0)",
+            "isHidden": false,
+            "formatString": "0.0%;-0.0%;0.0%",
+            "displayFolder": null,
+            "description": null,
+            "business_domains": [
+              "efficiency",
+              "market_share",
+              "volume"
+            ]
+          },
+          {
+            "name": "Share Lab",
+            "dax": "VAR _LabSelecionado = SELECTEDVALUE(Seletor_Laboratorio[LABORATORIO])\n\t\t\tVAR _DemandaMKT = \n\t\t\t    CALCULATE(\n\t\t\t        [PX Total],\n\t\t\t        REMOVEFILTERS(\n\t\t\t            Fato_Target[MARCA],\n\t\t\t            Fato_Target[LABORATORIO],\n\t\t\t            Fato_Target[LAB_ABV],\n\t\t\t            Fato_Target[APRESENTACAO],\n\t\t\t            Fato_Target[FORMA_FARMA],\n\t\t\t            Fato_Target[CONCENTRACAO]\n\t\t\t        ), \n\t\t\t        KEEPFILTERS(VALUES(Fato_Target[MERCADO]))\n\t\t\t    )\n\t\t\tVAR _Demanda_Lab_Especifico = \n\t\t\t    CALCULATE(\n\t\t\t        [PX Total],\n\t\t\t        Fato_Target[LABORATORIO] = _LabSelecionado\n\t\t\t    )\n\t\t\tVAR _Demanda_Galderma = \n\t\t\t    CALCULATE(\n\t\t\t        [PX Total],\n\t\t\t        Fato_Target[LABORATORIO] = \"GALDERMA\"\n\t\t\t    )\n\t\t\tVAR _Share_Lab_Especifico = DIVIDE(_Demanda_Lab_Especifico, _DemandaMKT, 0)\n\t\t\tVAR _Share_Galderma = DIVIDE(_Demanda_Galderma, _DemandaMKT, 0)\n\t\t\tVAR _Share_Concorrentes = 1 - _Share_Galderma\n\t\t\tVAR _Resultado =\n\t\t\tIF(\n\t\t\t        _LabSelecionado = \"(Todos)\", \n\t\t\t        _Share_Concorrentes,         \n\t\t\t        _Share_Lab_Especifico        \n\t\t\t    )\n\t\t\tRETURN\n\t\t\tIF(\n\t\t\t    ISBLANK(_DemandaMKT) || _DemandaMKT =0,\n\t\t\t    BLANK(),\n\t\t\t    _Resultado\n\t\t\t)",
+            "isHidden": false,
+            "formatString": "0.0%;-0.0%;0.0%",
+            "displayFolder": null,
+            "description": null,
+            "business_domains": [
+              "efficiency",
+              "market_share",
+              "volume"
+            ]
+          },
+          {
+            "name": "GLD Share Atual",
+            "dax": "DIVIDE([GLD Atual],[PX Atual],BLANK())",
+            "isHidden": false,
+            "formatString": "0.0%;-0.0%;0.0%",
+            "displayFolder": null,
+            "description": null,
+            "business_domains": [
+              "market_share"
+            ]
+          },
+          {
+            "name": "GLD Atual",
+            "dax": "CALCULATE([PX Atual], Fato_Target[LAB_ABV]=\"GLD\")\n\t\tannotation PBI_FormatHint = {\"isDecimal\":true}",
+            "isHidden": false,
+            "formatString": "#,0",
+            "displayFolder": null,
+            "description": null,
+            "business_domains": [
+              "efficiency"
+            ]
+          },
+          {
+            "name": "CRMs CAT",
+            "dax": "DISTINCTCOUNT(Dim_CAT[UFCRM])",
+            "isHidden": false,
+            "formatString": "#,0",
+            "displayFolder": null,
+            "description": null,
+            "business_domains": [
+              "sales_force"
+            ]
+          },
+          {
+            "name": "Penetração Total",
+            "dax": "([MS Atual] - [MS Comparativo])*100\n\t\tannotation PBI_FormatHint = {\"isGeneralNumber\":true}",
+            "isHidden": false,
+            "formatString": null,
+            "displayFolder": null,
+            "description": null,
+            "business_domains": [
+              "growth",
+              "penetration"
+            ]
+          },
+          {
+            "name": "Share Lab Atual",
+            "dax": "VAR _LabSelecionado = SELECTEDVALUE(Seletor_Laboratorio[LABORATORIO])\n\t\t\tVAR _DemandaMKT = \n\t\t\t    CALCULATE(\n\t\t\t        [PX Atual],\n\t\t\t        REMOVEFILTERS(\n\t\t\t            Fato_Target[MARCA],\n\t\t\t            Fato_Target[LABORATORIO],\n\t\t\t            Fato_Target[LAB_ABV],\n\t\t\t            Fato_Target[APRESENTACAO],\n\t\t\t            Fato_Target[FORMA_FARMA],\n\t\t\t            Fato_Target[CONCENTRACAO]\n\t\t\t        ), \n\t\t\t        KEEPFILTERS(VALUES(Fato_Target[MERCADO]))\n\t\t\t    )\n\t\t\tVAR _Demanda_Lab_Especifico = \n\t\t\t    CALCULATE(\n\t\t\t        [PX Atual],\n\t\t\t        Fato_Target[LABORATORIO] = _LabSelecionado\n\t\t\t    )\n\t\t\tVAR _Demanda_Galderma = [GLD Atual]\n\t\t\tVAR _Share_Lab_Especifico = DIVIDE(_Demanda_Lab_Especifico, _DemandaMKT, 0)\n\t\t\tVAR _Share_Galderma = DIVIDE(_Demanda_Galderma, _DemandaMKT, 0)\n\t\t\tVAR _Share_Concorrentes = 1 - _Share_Galderma\n\t\t\tVAR _Resultado =\n\t\t\tIF(\n\t\t\t        _LabSelecionado = \"(Todos)\", \n\t\t\t        _Share_Concorrentes,         \n\t\t\t        _Share_Lab_Especifico        \n\t\t\t    )\n\t\t\tRETURN\n\t\t\tIF(\n\t\t\t    ISBLANK(_DemandaMKT) || _DemandaMKT =0,\n\t\t\t    BLANK(),\n\t\t\t    _Resultado\n\t\t\t)",
+            "isHidden": false,
+            "formatString": "0.0%;-0.0%;0.0%",
+            "displayFolder": null,
+            "description": null,
+            "business_domains": [
+              "efficiency",
+              "market_share",
+              "volume"
+            ]
+          },
+          {
+            "name": "GLD MS Atual",
+            "dax": "DIVIDE([GLD Atual],[PX Atual],BLANK())",
+            "isHidden": false,
+            "formatString": "0.0%;-0.0%;0.0%",
+            "displayFolder": null,
+            "description": null,
+            "business_domains": []
+          },
+          {
+            "name": "GLD Comparativo",
+            "dax": "CALCULATE([PX Comparativo],Fato_Target[LAB_ABV]=\"GLD\")\n\t\tannotation PBI_FormatHint = {\"isGeneralNumber\":true}",
+            "isHidden": false,
+            "formatString": null,
+            "displayFolder": null,
+            "description": null,
+            "business_domains": [
+              "efficiency",
+              "growth"
+            ]
+          },
+          {
+            "name": "GLD MS Anterior",
+            "dax": "DIVIDE([GLD Comparativo],[PX Comparativo],BLANK())",
+            "isHidden": false,
+            "formatString": "0.0%;-0.0%;0.0%",
+            "displayFolder": null,
+            "description": null,
+            "business_domains": [
+              "growth"
+            ]
+          },
+          {
+            "name": "CRMs Total",
+            "dax": "(DISTINCTCOUNT(Dim_Medicos[UFCRM]))",
+            "isHidden": false,
+            "formatString": "#,0",
+            "displayFolder": null,
+            "description": null,
+            "business_domains": [
+              "sales_force"
+            ]
+          },
+          {
+            "name": "GLD Penetração",
+            "dax": "([GLD MS Atual] - [GLD MS Anterior])*100\n\t\tannotation PBI_FormatHint = {\"isGeneralNumber\":true}",
+            "isHidden": false,
+            "formatString": null,
+            "displayFolder": null,
+            "description": null,
+            "business_domains": [
+              "growth",
+              "penetration"
+            ]
+          },
+          {
+            "name": "CRMs Ativos",
+            "dax": "CALCULATE([CRMs Total],FILTER(VALUES(Dim_Medicos[UFCRM]),[PX Atual]>0))",
+            "isHidden": false,
+            "formatString": "#,0",
+            "displayFolder": null,
+            "description": null,
+            "business_domains": [
+              "sales_force"
+            ]
+          },
+          {
+            "name": "CRMs Ativos GLD",
+            "dax": "CALCULATE([CRMs Ativos],Fato_Target[LAB_ABV]=\"GLD\")",
+            "isHidden": false,
+            "formatString": "#,0",
+            "displayFolder": null,
+            "description": null,
+            "business_domains": [
+              "efficiency"
+            ]
+          },
+          {
+            "name": "PX CRMs Ativos",
+            "dax": "CALCULATE([PX Atual],FILTER(VALUES(Dim_Medicos[UFCRM]),[PX Atual]>0))\n\t\tannotation PBI_FormatHint = {\"isGeneralNumber\":true}",
+            "isHidden": false,
+            "formatString": null,
+            "displayFolder": null,
+            "description": null,
+            "business_domains": [
+              "sales_force"
+            ]
+          },
+          {
+            "name": "Data Atualizacao (Mes/Ano)",
+            "dax": "VAR MaxPeriodo = \n\t\t\t    CALCULATE(\n\t\t\t        MAX(Fato_Target[DATA]), \n\t\t\t        ALL(Fato_Target -- Garante que pega o maior valor global, ignorando filtros\n\t\t\t    ))\n\t\t\tVAR Ano = LEFT(MaxPeriodo, 4)\n\t\t\tVAR Mes = MID(MaxPeriodo, 5, 2)\n\t\t\tVAR Dia = RIGHT(MaxPeriodo, 2)\n\t\t\tVAR DataConvertida = DATE(Ano, Mes, Dia)\n\t\t\tRETURN\n\t\t\t    -- \"yyyy\" traz o ano com 4 dígitos\n\t\t\t    FORMAT(DataConvertida, \"mmm/yyyy\")",
+            "isHidden": false,
+            "formatString": null,
+            "displayFolder": null,
+            "description": null,
+            "business_domains": [
+              "efficiency",
+              "revenue"
+            ]
+          },
+          {
+            "name": "GLD Evolution Index",
+            "dax": "VAR _Fator_Crescimento_GLD = \n\t\t\t    DIVIDE(\n\t\t\t        [GLD Atual], \n\t\t\t        [GLD Comparativo], \n\t\t\t        BLANK()\n\t\t\t    )\n\t\t\tVAR _MKT_Atual = \n\t\t\t    CALCULATE(\n\t\t\t        [PX Atual],\n\t\t\t        REMOVEFILTERS(\n\t\t\t            Fato_Target[MARCA],\n\t\t\t            Fato_Target[LABORATORIO],\n\t\t\t            Fato_Target[LAB_ABV],\n\t\t\t            Fato_Target[APRESENTACAO],\n\t\t\t            Fato_Target[FORMA_FARMA],\n\t\t\t            Fato_Target[CONCENTRACAO]\n\t\t\t        ), \n\t\t\t        KEEPFILTERS(VALUES(Fato_Target[MERCADO]))\n\t\t\t    )\n\t\t\tVAR _MKT_Comparativo = \n\t\t\t    CALCULATE(\n\t\t\t        [PX Comparativo],\n\t\t\t        REMOVEFILTERS(\n\t\t\t            Fato_Target[MARCA],\n\t\t\t            Fato_Target[LABORATORIO],\n\t\t\t            Fato_Target[LAB_ABV],\n\t\t\t            Fato_Target[APRESENTACAO],\n\t\t\t            Fato_Target[FORMA_FARMA],\n\t\t\t            Fato_Target[CONCENTRACAO]\n\t\t\t        ), \n\t\t\t        KEEPFILTERS(VALUES(Fato_Target[MERCADO]))\n\t\t\t    )\n\t\t\tVAR _Fator_Crescimento_MKT = \n\t\t\t    DIVIDE(\n\t\t\t        _MKT_Atual, \n\t\t\t        _MKT_Comparativo, \n\t\t\t        BLANK()\n\t\t\t    )\n\t\t\tRETURN\n\t\t\t    DIVIDE(\n\t\t\t        _Fator_Crescimento_GLD, \n\t\t\t        _Fator_Crescimento_MKT, \n\t\t\t        BLANK()\n\t\t\t    ) * 100\n\t\t\t \n\t\tannotation PBI_FormatHint = {\"isGeneralNumber\":true}",
+            "isHidden": false,
+            "formatString": null,
+            "displayFolder": null,
+            "description": null,
+            "business_domains": [
+              "efficiency",
+              "growth"
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Dim_Medidas",
+            "mode": "import",
+            "power_query_summary": {
+              "provider": "json",
+              "steps_count": 1,
+              "steps_summary": [
+                "Fonte"
+              ],
+              "native_query": {
+                "exists": false
+              },
+              "confidence": "partial"
+            }
+          }
+        ],
+        "description": null
+      },
+      "Dim_Painel": {
+        "name": "Dim_Painel",
+        "isHidden": false,
+        "columns": [
+          {
+            "name": "PAINEL_ID",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "CUSTOMER_ID",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "UFCRM",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "SEG_ACNE_ORAL",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "SEG_ACNE_TOPICO",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "SEG_CLEANSER",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "SEG_DCR",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "SEG_HIDRA",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "SEG_ONICOMICOS",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "SEG_ROSACEA",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "SEG_SUN",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "GLD_TARGETING_RX",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "TARGETING_CX",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "TERRITORIO",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "TERRITORY_C",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          }
+        ],
+        "measures": [],
+        "partitions": [
+          {
+            "name": "Dim_Painel",
+            "mode": "import",
+            "power_query_summary": {
+              "provider": "databricks",
+              "steps_count": 4,
+              "steps_summary": [
+                "Source",
+                "QueryDBT",
+                "WHERE B.recordtypeid='01261000000C6FAAA0') B ON A.Account_vod__c",
+                "WHERE A.Delete_From_My_Territory_vod__c"
+              ],
+              "native_query": {
+                "exists": false
+              },
+              "confidence": "partial"
+            }
+          }
+        ],
+        "description": null
+      },
+      "Dim_Per": {
+        "name": "Dim_Per",
+        "isHidden": false,
+        "columns": [
+          {
+            "name": "PERIOD_ID",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "DATA",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "MTH",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "YEAR",
+            "dataType": "int64",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": "0",
+            "description": null
+          },
+          {
+            "name": "MQT",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "TRI",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "MAT",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "YTD",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "MTH_NM",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "YEAR_NM",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "MQT_NM",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "TRI_NM",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "MAT_NM",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "YTD_NM",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          }
+        ],
+        "measures": [],
+        "partitions": [
+          {
+            "name": "Dim_Per",
+            "mode": "import",
+            "power_query_summary": {
+              "provider": "databricks",
+              "steps_count": 4,
+              "steps_summary": [
+                "Source",
+                "QueryDBT",
+                "CASE WHEN MONTH(am.month_start) <",
+                "CASE WHEN YTD !"
+              ],
+              "native_query": {
+                "exists": false
+              },
+              "confidence": "partial"
+            }
+          }
+        ],
+        "description": null
+      },
+      "Fato_Target": {
+        "name": "Fato_Target",
+        "isHidden": false,
+        "columns": [
+          {
+            "name": "MARCA",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "LAB_ABV",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "MERCADO",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "LABORATORIO",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "APRESENTACAO",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "FORMA_FARMA",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "CONCENTRACAO",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "UFCRM",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "UF",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "MUNICIPIO",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "NOME_MEDICO",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "ESP1",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "ESP2",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "CEP",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "BAIRRO",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "DATA",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "PX1",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "PX2",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "PX",
+            "dataType": "double",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "ID_UFCRM_MERCADO",
+            "dataType": "String",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "BRICK",
+            "dataType": "String",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "GLD_ID",
+            "dataType": "String",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          }
+        ],
+        "measures": [],
+        "partitions": [
+          {
+            "name": "Fato_Target",
+            "mode": "import",
+            "power_query_summary": {
+              "provider": "databricks",
+              "steps_count": 29,
+              "steps_summary": [
+                "Source",
+                "QueryDBT",
+                "LEFT JOIN brazil.silver.closeup_target_marcas B ON A.CDGMARCA",
+                "LEFT JOIN brazil.silver.closeup_target_laboratorio C ON B.CDGLABORATORIO",
+                "LEFT JOIN brazil.silver.closeup_target_produto D ON A.CDGMARCA"
+              ],
+              "native_query": {
+                "exists": false
+              },
+              "confidence": "partial"
+            }
+          }
+        ],
+        "description": null
+      },
+      "SeletorComparacao": {
+        "name": "SeletorComparacao",
+        "isHidden": false,
+        "columns": [
+          {
+            "name": "ID_Comparacao",
+            "dataType": "String",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": "0",
+            "description": null
+          },
+          {
+            "name": "Comparativo",
+            "dataType": "String",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          }
+        ],
+        "measures": [],
+        "partitions": [
+          {
+            "name": "SeletorComparacao",
+            "mode": "import",
+            "power_query_summary": {
+              "provider": null,
+              "steps_count": 0,
+              "steps_summary": [],
+              "native_query": {
+                "exists": false
+              },
+              "confidence": "low"
+            }
+          }
+        ],
+        "description": null
+      },
+      "Seletor_Laboratorio": {
+        "name": "Seletor_Laboratorio",
+        "isHidden": false,
+        "columns": [
+          {
+            "name": "LABORATORIO",
+            "dataType": "String",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "Ordem",
+            "dataType": "String",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": "0",
+            "description": null
+          }
+        ],
+        "measures": [],
+        "partitions": [
+          {
+            "name": "Seletor_Laboratorio",
+            "mode": "import",
+            "power_query_summary": {
+              "provider": null,
+              "steps_count": 0,
+              "steps_summary": [],
+              "native_query": {
+                "exists": false
+              },
+              "confidence": "low"
+            }
+          }
+        ],
+        "description": null
+      },
+      "Tabela_Periodos_Unificada": {
+        "name": "Tabela_Periodos_Unificada",
+        "isHidden": false,
+        "columns": [
+          {
+            "name": "Periodo",
+            "dataType": "String",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "Texto",
+            "dataType": "String",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "ANOMES",
+            "dataType": "String",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "PERIOD",
+            "dataType": "String",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          }
+        ],
+        "measures": [],
+        "partitions": [
+          {
+            "name": "Tabela_Periodos_Unificada",
+            "mode": "import",
+            "power_query_summary": {
+              "provider": null,
+              "steps_count": 0,
+              "steps_summary": [],
+              "native_query": {
+                "exists": false
+              },
+              "confidence": "low"
+            }
+          }
+        ],
+        "description": null
+      },
+      "Territorio_BRICK": {
+        "name": "Territorio_BRICK",
+        "isHidden": false,
+        "columns": [
+          {
+            "name": "SET_ID",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "CLUSTER",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "Business_Unit",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "Business_Front",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "Team",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "Op",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "territorio_descricao",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "cenario_ativo",
+            "dataType": "boolean",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": "TRUE\"\";\"\"TRUE\"\";\"\"FALSE",
+            "description": null
+          },
+          {
+            "name": "cenario_nome",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "ciclo_data_ini",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "ciclo_data_fim",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "ciclo_nome",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "SALES_REP",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "funcionario_sf",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "funcionario_status",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "distrito",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "DISTRITAL_MANAGER",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "sf_distrital",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "regional",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "REGIONAL_MANAGER",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          },
+          {
+            "name": "sf_regional",
+            "dataType": "string",
+            "isHidden": false,
+            "isKey": false,
+            "formatString": null,
+            "description": null
+          }
+        ],
+        "measures": [],
+        "partitions": [
+          {
+            "name": "Territorio_BRICK",
+            "mode": "import",
+            "power_query_summary": {
+              "provider": "databricks",
+              "steps_count": 17,
+              "steps_summary": [
+                "Source",
+                "QueryDBT",
+                "INNER JOIN brazil.silver.galportal_cenario C ON C.cenario_codigo",
+                "INNER JOIN brazil.silver.galportal_ciclo Ci ON Ci.ciclo_codigo",
+                "INNER JOIN brazil.silver.galportal_territorio_funcionario TF ON TF.territorio_codigo"
+              ],
+              "native_query": {
+                "exists": false
+              },
+              "confidence": "partial"
+            }
+          }
+        ],
+        "description": null
+      }
+    },
+    "relationships": [
+      {
+        "from": "Fato_Target.UFCRM",
+        "to": "Dim_Medicos.UFCRM",
+        "cardinality": null,
+        "filterDirection": null,
+        "crossFilteringBehavior": "bothDirections",
+        "isActive": true
+      },
+      {
+        "from": "Fato_Target.DATA",
+        "to": "Dim_Per.PERIOD_ID",
+        "cardinality": null,
+        "filterDirection": null,
+        "crossFilteringBehavior": "bothDirections",
+        "isActive": true
+      },
+      {
+        "from": "Fato_Target.UFCRM",
+        "to": "Dim_Painel.UFCRM",
+        "cardinality": null,
+        "filterDirection": null,
+        "crossFilteringBehavior": null,
+        "isActive": true
+      },
+      {
+        "from": "Fato_Target.ID_UFCRM_MERCADO",
+        "to": "Dim_CAT.ID_UFCRM_MERCADO",
+        "cardinality": null,
+        "filterDirection": null,
+        "crossFilteringBehavior": "bothDirections",
+        "isActive": true
+      },
+      {
+        "from": "Tabela_Periodos_Unificada.PERIOD",
+        "to": "Fato_Target.DATA",
+        "cardinality": null,
+        "filterDirection": null,
+        "crossFilteringBehavior": "bothDirections",
+        "isActive": true
+      },
+      {
+        "from": "Dim_Medicos.BRICK_CD",
+        "to": "Dim_BRICKS.BRICK_CD",
+        "cardinality": null,
+        "filterDirection": null,
+        "crossFilteringBehavior": "bothDirections",
+        "isActive": true
+      },
+      {
+        "from": "Dim_Medicos.SET_ID",
+        "to": "Territorio_BRICK.SET_ID",
+        "cardinality": null,
+        "filterDirection": null,
+        "crossFilteringBehavior": null,
+        "isActive": true
+      }
+    ]
+  },
+  "report_context": {
+    "pages": [],
+    "fields_in_use": [],
+    "bookmarks_count": 0
+  },
+  "audit_lite": {
+    "orphaned_measures": [
+      "Dim_Medidas.CRMs Ativos",
+      "Dim_Medidas.CRMs Ativos GLD",
+      "Dim_Medidas.CRMs CAT",
+      "Dim_Medidas.CRMs Total",
+      "Dim_Medidas.Data Atualizacao (Mes/Ano)",
+      "Dim_Medidas.GLD Atual",
+      "Dim_Medidas.GLD Comparativo",
+      "Dim_Medidas.GLD Evolution Index",
+      "Dim_Medidas.GLD MS Anterior",
+      "Dim_Medidas.GLD MS Atual",
+      "Dim_Medidas.GLD Penetração",
+      "Dim_Medidas.GLD Share",
+      "Dim_Medidas.GLD Share Atual",
+      "Dim_Medidas.MS Atual",
+      "Dim_Medidas.MS Comparativo",
+      "Dim_Medidas.PX Anterior",
+      "Dim_Medidas.PX Atual",
+      "Dim_Medidas.PX CRMs Ativos",
+      "Dim_Medidas.PX Comparativo",
+      "Dim_Medidas.PX Crescimento %",
+      "Dim_Medidas.PX Total",
+      "Dim_Medidas.PX YoY",
+      "Dim_Medidas.Penetração Total",
+      "Dim_Medidas.Share Lab",
+      "Dim_Medidas.Share Lab Atual"
+    ],
+    "unused_measures": [
+      "Dim_Medidas.CRMs Ativos",
+      "Dim_Medidas.CRMs Ativos GLD",
+      "Dim_Medidas.CRMs CAT",
+      "Dim_Medidas.CRMs Total",
+      "Dim_Medidas.Data Atualizacao (Mes/Ano)",
+      "Dim_Medidas.GLD Atual",
+      "Dim_Medidas.GLD Comparativo",
+      "Dim_Medidas.GLD Evolution Index",
+      "Dim_Medidas.GLD MS Anterior",
+      "Dim_Medidas.GLD MS Atual",
+      "Dim_Medidas.GLD Penetração",
+      "Dim_Medidas.GLD Share",
+      "Dim_Medidas.GLD Share Atual",
+      "Dim_Medidas.MS Atual",
+      "Dim_Medidas.MS Comparativo",
+      "Dim_Medidas.PX Anterior",
+      "Dim_Medidas.PX Atual",
+      "Dim_Medidas.PX CRMs Ativos",
+      "Dim_Medidas.PX Comparativo",
+      "Dim_Medidas.PX Crescimento %",
+      "Dim_Medidas.PX Total",
+      "Dim_Medidas.PX YoY",
+      "Dim_Medidas.Penetração Total",
+      "Dim_Medidas.Share Lab",
+      "Dim_Medidas.Share Lab Atual"
+    ],
+    "dax_quality": {
+      "Dim_Medidas.PX Total": {
+        "antipatterns": [],
+        "complexity_score": 0.0,
+        "complexity_rating": "low"
+      },
+      "Dim_Medidas.PX Atual": {
+        "antipatterns": [
+          {
+            "type": "filter_all_pattern",
+            "severity": "medium",
+            "description": "FILTER(ALL(...), ...) pode causar context transition desnecessária",
+            "suggestion": "Considere CALCULATETABLE ou variáveis"
+          }
+        ],
+        "complexity_score": 3.5,
+        "complexity_rating": "low"
+      },
+      "Dim_Medidas.PX Anterior": {
+        "antipatterns": [
+          {
+            "type": "filter_all_pattern",
+            "severity": "medium",
+            "description": "FILTER(ALL(...), ...) pode causar context transition desnecessária",
+            "suggestion": "Considere CALCULATETABLE ou variáveis"
+          }
+        ],
+        "complexity_score": 3.5,
+        "complexity_rating": "low"
+      },
+      "Dim_Medidas.PX YoY": {
+        "antipatterns": [
+          {
+            "type": "filter_all_pattern",
+            "severity": "medium",
+            "description": "FILTER(ALL(...), ...) pode causar context transition desnecessária",
+            "suggestion": "Considere CALCULATETABLE ou variáveis"
+          }
+        ],
+        "complexity_score": 3.5,
+        "complexity_rating": "low"
+      },
+      "Dim_Medidas.PX Comparativo": {
+        "antipatterns": [],
+        "complexity_score": 0.0,
+        "complexity_rating": "low"
+      },
+      "Dim_Medidas.PX Crescimento %": {
+        "antipatterns": [],
+        "complexity_score": 0.0,
+        "complexity_rating": "low"
+      },
+      "Dim_Medidas.MS Atual": {
+        "antipatterns": [
+          {
+            "type": "aggressive_removefilters",
+            "severity": "medium",
+            "description": "REMOVEFILTERS() sem escopo explícito",
+            "suggestion": "Prefira ALL() com colunas específicas"
+          }
+        ],
+        "complexity_score": 2.0,
+        "complexity_rating": "low"
+      },
+      "Dim_Medidas.MS Comparativo": {
+        "antipatterns": [
+          {
+            "type": "aggressive_removefilters",
+            "severity": "medium",
+            "description": "REMOVEFILTERS() sem escopo explícito",
+            "suggestion": "Prefira ALL() com colunas específicas"
+          }
+        ],
+        "complexity_score": 2.0,
+        "complexity_rating": "low"
+      },
+      "Dim_Medidas.GLD Share": {
+        "antipatterns": [
+          {
+            "type": "aggressive_removefilters",
+            "severity": "medium",
+            "description": "REMOVEFILTERS() sem escopo explícito",
+            "suggestion": "Prefira ALL() com colunas específicas"
+          }
+        ],
+        "complexity_score": 4.0,
+        "complexity_rating": "low"
+      },
+      "Dim_Medidas.Share Lab": {
+        "antipatterns": [
+          {
+            "type": "aggressive_removefilters",
+            "severity": "medium",
+            "description": "REMOVEFILTERS() sem escopo explícito",
+            "suggestion": "Prefira ALL() com colunas específicas"
+          }
+        ],
+        "complexity_score": 6.0,
+        "complexity_rating": "medium"
+      },
+      "Dim_Medidas.GLD Share Atual": {
+        "antipatterns": [],
+        "complexity_score": 0.0,
+        "complexity_rating": "low"
+      },
+      "Dim_Medidas.GLD Atual": {
+        "antipatterns": [],
+        "complexity_score": 2.0,
+        "complexity_rating": "low"
+      },
+      "Dim_Medidas.CRMs CAT": {
+        "antipatterns": [],
+        "complexity_score": 0.0,
+        "complexity_rating": "low"
+      },
+      "Dim_Medidas.Penetração Total": {
+        "antipatterns": [],
+        "complexity_score": 0.0,
+        "complexity_rating": "low"
+      },
+      "Dim_Medidas.Share Lab Atual": {
+        "antipatterns": [
+          {
+            "type": "aggressive_removefilters",
+            "severity": "medium",
+            "description": "REMOVEFILTERS() sem escopo explícito",
+            "suggestion": "Prefira ALL() com colunas específicas"
+          }
+        ],
+        "complexity_score": 4.0,
+        "complexity_rating": "low"
+      },
+      "Dim_Medidas.GLD MS Atual": {
+        "antipatterns": [],
+        "complexity_score": 0.0,
+        "complexity_rating": "low"
+      },
+      "Dim_Medidas.GLD Comparativo": {
+        "antipatterns": [],
+        "complexity_score": 2.0,
+        "complexity_rating": "low"
+      },
+      "Dim_Medidas.GLD MS Anterior": {
+        "antipatterns": [],
+        "complexity_score": 0.0,
+        "complexity_rating": "low"
+      },
+      "Dim_Medidas.CRMs Total": {
+        "antipatterns": [],
+        "complexity_score": 0.0,
+        "complexity_rating": "low"
+      },
+      "Dim_Medidas.GLD Penetração": {
+        "antipatterns": [],
+        "complexity_score": 0.0,
+        "complexity_rating": "low"
+      },
+      "Dim_Medidas.CRMs Ativos": {
+        "antipatterns": [],
+        "complexity_score": 3.5,
+        "complexity_rating": "low"
+      },
+      "Dim_Medidas.CRMs Ativos GLD": {
+        "antipatterns": [],
+        "complexity_score": 2.0,
+        "complexity_rating": "low"
+      },
+      "Dim_Medidas.PX CRMs Ativos": {
+        "antipatterns": [],
+        "complexity_score": 3.5,
+        "complexity_rating": "low"
+      },
+      "Dim_Medidas.Data Atualizacao (Mes/Ano)": {
+        "antipatterns": [],
+        "complexity_score": 2.0,
+        "complexity_rating": "low"
+      },
+      "Dim_Medidas.GLD Evolution Index": {
+        "antipatterns": [
+          {
+            "type": "aggressive_removefilters",
+            "severity": "medium",
+            "description": "REMOVEFILTERS() sem escopo explícito",
+            "suggestion": "Prefira ALL() com colunas específicas"
+          }
+        ],
+        "complexity_score": 4.0,
+        "complexity_rating": "low"
+      }
+    },
+    "dependency_graph": {
+      "Dim_Medidas.PX Total": [],
+      "Dim_Medidas.PX Atual": [
+        "Dim_Medidas.PX Total"
+      ],
+      "Dim_Medidas.PX Anterior": [
+        "Dim_Medidas.PX Total"
+      ],
+      "Dim_Medidas.PX YoY": [
+        "Dim_Medidas.PX Total"
+      ],
+      "Dim_Medidas.PX Comparativo": [
+        "Dim_Medidas.PX Anterior",
+        "Dim_Medidas.PX YoY"
+      ],
+      "Dim_Medidas.PX Crescimento %": [
+        "Dim_Medidas.PX Atual",
+        "Dim_Medidas.PX Comparativo"
+      ],
+      "Dim_Medidas.MS Atual": [
+        "Dim_Medidas.PX Atual"
+      ],
+      "Dim_Medidas.MS Comparativo": [
+        "Dim_Medidas.PX Comparativo"
+      ],
+      "Dim_Medidas.GLD Share": [
+        "Dim_Medidas.PX Total"
+      ],
+      "Dim_Medidas.Share Lab": [
+        "Dim_Medidas.PX Total"
+      ],
+      "Dim_Medidas.GLD Share Atual": [
+        "Dim_Medidas.GLD Atual",
+        "Dim_Medidas.PX Atual"
+      ],
+      "Dim_Medidas.GLD Atual": [
+        "Dim_Medidas.PX Atual"
+      ],
+      "Dim_Medidas.CRMs CAT": [],
+      "Dim_Medidas.Penetração Total": [
+        "Dim_Medidas.MS Atual",
+        "Dim_Medidas.MS Comparativo"
+      ],
+      "Dim_Medidas.Share Lab Atual": [
+        "Dim_Medidas.GLD Atual",
+        "Dim_Medidas.PX Atual"
+      ],
+      "Dim_Medidas.GLD MS Atual": [
+        "Dim_Medidas.GLD Atual",
+        "Dim_Medidas.PX Atual"
+      ],
+      "Dim_Medidas.GLD Comparativo": [
+        "Dim_Medidas.PX Comparativo"
+      ],
+      "Dim_Medidas.GLD MS Anterior": [
+        "Dim_Medidas.GLD Comparativo",
+        "Dim_Medidas.PX Comparativo"
+      ],
+      "Dim_Medidas.CRMs Total": [],
+      "Dim_Medidas.GLD Penetração": [
+        "Dim_Medidas.GLD MS Anterior",
+        "Dim_Medidas.GLD MS Atual"
+      ],
+      "Dim_Medidas.CRMs Ativos": [
+        "Dim_Medidas.CRMs Total",
+        "Dim_Medidas.PX Atual"
+      ],
+      "Dim_Medidas.CRMs Ativos GLD": [
+        "Dim_Medidas.CRMs Ativos"
+      ],
+      "Dim_Medidas.PX CRMs Ativos": [
+        "Dim_Medidas.PX Atual"
+      ],
+      "Dim_Medidas.Data Atualizacao (Mes/Ano)": [],
+      "Dim_Medidas.GLD Evolution Index": [
+        "Dim_Medidas.GLD Atual",
+        "Dim_Medidas.GLD Comparativo",
+        "Dim_Medidas.PX Atual",
+        "Dim_Medidas.PX Comparativo"
+      ]
+    },
+    "usage_summary": {},
+    "critical_antipatterns": [
+      {
+        "measure": "Dim_Medidas.PX Atual",
+        "issue": "filter_all_pattern",
+        "severity": "medium",
+        "description": "FILTER(ALL(...), ...) pode causar context transition desnecessária",
+        "suggestion": "Considere CALCULATETABLE ou variáveis"
+      },
+      {
+        "measure": "Dim_Medidas.PX Anterior",
+        "issue": "filter_all_pattern",
+        "severity": "medium",
+        "description": "FILTER(ALL(...), ...) pode causar context transition desnecessária",
+        "suggestion": "Considere CALCULATETABLE ou variáveis"
+      },
+      {
+        "measure": "Dim_Medidas.PX YoY",
+        "issue": "filter_all_pattern",
+        "severity": "medium",
+        "description": "FILTER(ALL(...), ...) pode causar context transition desnecessária",
+        "suggestion": "Considere CALCULATETABLE ou variáveis"
+      },
+      {
+        "measure": "Dim_Medidas.MS Atual",
+        "issue": "aggressive_removefilters",
+        "severity": "medium",
+        "description": "REMOVEFILTERS() sem escopo explícito",
+        "suggestion": "Prefira ALL() com colunas específicas"
+      },
+      {
+        "measure": "Dim_Medidas.MS Comparativo",
+        "issue": "aggressive_removefilters",
+        "severity": "medium",
+        "description": "REMOVEFILTERS() sem escopo explícito",
+        "suggestion": "Prefira ALL() com colunas específicas"
+      },
+      {
+        "measure": "Dim_Medidas.GLD Share",
+        "issue": "aggressive_removefilters",
+        "severity": "medium",
+        "description": "REMOVEFILTERS() sem escopo explícito",
+        "suggestion": "Prefira ALL() com colunas específicas"
+      },
+      {
+        "measure": "Dim_Medidas.Share Lab",
+        "issue": "aggressive_removefilters",
+        "severity": "medium",
+        "description": "REMOVEFILTERS() sem escopo explícito",
+        "suggestion": "Prefira ALL() com colunas específicas"
+      },
+      {
+        "measure": "Dim_Medidas.Share Lab Atual",
+        "issue": "aggressive_removefilters",
+        "severity": "medium",
+        "description": "REMOVEFILTERS() sem escopo explícito",
+        "suggestion": "Prefira ALL() com colunas específicas"
+      },
+      {
+        "measure": "Dim_Medidas.GLD Evolution Index",
+        "issue": "aggressive_removefilters",
+        "severity": "medium",
+        "description": "REMOVEFILTERS() sem escopo explícito",
+        "suggestion": "Prefira ALL() com colunas específicas"
+      }
+    ],
+    "business_domains": {
+      "efficiency": [
+        "Dim_Medidas.PX Total",
+        "Dim_Medidas.MS Atual",
+        "Dim_Medidas.MS Comparativo",
+        "Dim_Medidas.GLD Share",
+        "Dim_Medidas.Share Lab",
+        "Dim_Medidas.GLD Atual",
+        "Dim_Medidas.Share Lab Atual",
+        "Dim_Medidas.GLD Comparativo",
+        "Dim_Medidas.CRMs Ativos GLD",
+        "Dim_Medidas.Data Atualizacao (Mes/Ano)",
+        "Dim_Medidas.GLD Evolution Index"
+      ],
+      "growth": [
+        "Dim_Medidas.PX Anterior",
+        "Dim_Medidas.PX YoY",
+        "Dim_Medidas.PX Comparativo",
+        "Dim_Medidas.PX Crescimento %",
+        "Dim_Medidas.MS Comparativo",
+        "Dim_Medidas.Penetração Total",
+        "Dim_Medidas.GLD Comparativo",
+        "Dim_Medidas.GLD MS Anterior",
+        "Dim_Medidas.GLD Penetração",
+        "Dim_Medidas.GLD Evolution Index"
+      ],
+      "volume": [
+        "Dim_Medidas.MS Atual",
+        "Dim_Medidas.MS Comparativo",
+        "Dim_Medidas.GLD Share",
+        "Dim_Medidas.Share Lab",
+        "Dim_Medidas.Share Lab Atual"
+      ],
+      "market_share": [
+        "Dim_Medidas.GLD Share",
+        "Dim_Medidas.Share Lab",
+        "Dim_Medidas.GLD Share Atual",
+        "Dim_Medidas.Share Lab Atual"
+      ],
+      "sales_force": [
+        "Dim_Medidas.CRMs CAT",
+        "Dim_Medidas.CRMs Total",
+        "Dim_Medidas.CRMs Ativos",
+        "Dim_Medidas.PX CRMs Ativos"
+      ],
+      "penetration": [
+        "Dim_Medidas.Penetração Total",
+        "Dim_Medidas.GLD Penetração"
+      ],
+      "revenue": [
+        "Dim_Medidas.Data Atualizacao (Mes/Ano)"
+      ]
+    },
+    "governance_gaps": [],
+    "optimization_opportunities": [
+      {
+        "type": "measure_reuse",
+        "candidate": "Dim_Medidas.PX Total",
+        "used_in_count": 5,
+        "used_in_examples": [
+          "Dim_Medidas.PX Atual",
+          "Dim_Medidas.PX Anterior",
+          "Dim_Medidas.PX YoY",
+          "Dim_Medidas.GLD Share",
+          "Dim_Medidas.Share Lab"
+        ],
+        "suggestion": "Medida 'Dim_Medidas.PX Total' é reutilizada em 5+ cálculos — bom candidato para documentação como medida base."
+      },
+      {
+        "type": "measure_reuse",
+        "candidate": "Dim_Medidas.PX Atual",
+        "used_in_count": 9,
+        "used_in_examples": [
+          "Dim_Medidas.PX Crescimento %",
+          "Dim_Medidas.MS Atual",
+          "Dim_Medidas.GLD Share Atual",
+          "Dim_Medidas.GLD Atual",
+          "Dim_Medidas.Share Lab Atual"
+        ],
+        "suggestion": "Medida 'Dim_Medidas.PX Atual' é reutilizada em 9+ cálculos — bom candidato para documentação como medida base."
+      },
+      {
+        "type": "measure_reuse",
+        "candidate": "Dim_Medidas.PX Comparativo",
+        "used_in_count": 5,
+        "used_in_examples": [
+          "Dim_Medidas.PX Crescimento %",
+          "Dim_Medidas.MS Comparativo",
+          "Dim_Medidas.GLD Comparativo",
+          "Dim_Medidas.GLD MS Anterior",
+          "Dim_Medidas.GLD Evolution Index"
+        ],
+        "suggestion": "Medida 'Dim_Medidas.PX Comparativo' é reutilizada em 5+ cálculos — bom candidato para documentação como medida base."
+      },
+      {
+        "type": "measure_reuse",
+        "candidate": "Dim_Medidas.GLD Atual",
+        "used_in_count": 4,
+        "used_in_examples": [
+          "Dim_Medidas.GLD Share Atual",
+          "Dim_Medidas.Share Lab Atual",
+          "Dim_Medidas.GLD MS Atual",
+          "Dim_Medidas.GLD Evolution Index"
+        ],
+        "suggestion": "Medida 'Dim_Medidas.GLD Atual' é reutilizada em 4+ cálculos — bom candidato para documentação como medida base."
+      },
+      {
+        "type": "orphaned_complex_measure",
+        "candidate": "Dim_Medidas.Share Lab",
+        "complexity_score": 6.0,
+        "suggestion": "Medida órfã com complexidade 6.0 — candidata a remoção."
+      }
+    ]
+  },
+  "business_context": {
+    "kpi_definitions": {},
+    "requirements": [],
+    "acceptance_tests": []
+  },
+  "metadata": {
+    "version": "v6-llm-lite",
+    "tables_count": 13,
+    "measures_count": 25,
+    "relationships_count": 7,
+    "pages_count": 0
+  }
+}
